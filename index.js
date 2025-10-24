@@ -41,7 +41,7 @@ const upload = multer({
 
 
 
-let port = 3000;
+let port = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended : true})); // middelware
 app.set("view engine", "ejs");
 app.set("views",path.join(__dirname,"views"));
@@ -140,9 +140,8 @@ app.delete("/threads/:id", (req,res)=>{
     res.redirect("/threads");
 })
 
-app.listen(port, (req,res)=>{
-    console.log("server started...");
-});
+app.listen(port, () => console.log(`Server running on port ${port}
+`));
 
 
 
