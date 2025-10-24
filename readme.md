@@ -83,7 +83,7 @@ thread-app/
 
 ### Home Page / All Threads
 
-![Home Page / All Threads](./home%20page.png)
+![Home Page / All Threads](./All%20threads.png)
 
 ### New Thread Page
 
@@ -101,4 +101,4 @@ thread-app/
 
 🔗 **Check it out here:** [Thread App on Render](https://your-app-name.onrender.com)
 
-**Author:** @amandhakate27
+**Developed by :** @amandhakate27
