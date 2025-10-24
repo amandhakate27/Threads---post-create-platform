@@ -81,9 +81,9 @@ thread-app/
 
 ## Screenshots
 
-### Home Page
+### Home Page / All Threads
 
-![Home Page / All Threads](./all%20threads.png)
+![Home Page / All Threads](./home%20page.png)
 
 ### New Thread Page
 
@@ -91,7 +91,7 @@ thread-app/
 
 ### Edit Thread
 
-![Edit Thread](./edit%20post.png)
+![Edit Thread](./edit%20page.png)
 
 ### 404 Page Not Found
 

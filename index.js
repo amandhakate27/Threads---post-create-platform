@@ -54,7 +54,7 @@ let threads = [
        imgSrc : "/assets/woman-user-circle-icon.svg",
        name: "Sanjana Mishra",
        username : "sanjana_12_Mishra",
-       content : "this is the genuine response i realized when i was in siberia, Russia. how fucking cold it was! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laborum, voluptates velit, adipisci reprehenderit odit officiis reiciendis totam tempore nulla aliquid rem dolorum corrupti minus ad, nesciunt nam quae mollitia?"
+       content : "Title: The Most Underrated Productivity Hack I’ve been experimenting with productivity hacks for years — from time-blocking to Pomodoro timers — but I recently discovered something so simple that it completely changed how I work. It’s not about fancy apps, expensive courses, or new gadgets. It’s about micro-commits of focus."
 
     },
     {
@@ -62,7 +62,7 @@ let threads = [
        imgSrc : "/assets/man-user-circle-icon.svg",
        name: "Robert Simon",
        username : "robert_x_simon",
-       content : "well! the energy can neither be created nor be destroyed according to the law of conservation of energy it can transform from one place to another and that's literally  true. i have studied the from the unknown person he realized me the fucking truth , i was genuinely shock when i feel some enery around me."
+       content : "I used to think multitasking made me more productive — checking emails while coding, scrolling social media during meetings, juggling ten tabs at once. Turns out, it was just making me stressed and slower. I tried focusing on one task at a time, even if it meant doing less in a day, and the difference was night and day. Tasks got done faster, with better quality, and I actually enjoyed the process. Sometimes doing less really is doing more. Has anyone else tried single-tasking? How did it change your workflow?"
     },
     {       
        id : uuidv4(),
@@ -76,7 +76,7 @@ let threads = [
        imgSrc : "/assets/man-user-circle-icon.svg",
        name : "Andrew",
        username : "andagola_cocacola",
-       content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur doloremque, expedita quaerat modi blanditiis possimus necessitatibus nobis, laudantium asperiores provident. Tempora optio molestias recusandae dicta, animi non aspernatur architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur doloremque, expedita quaerat modi blanditiis possimus necessitatibus nobis, laudantium asperiores provident. Tempora optio molestias recusandae dicta, animi non aspernatur architecto!",
+       content : "I never thought doodling in the margins of my notebook would help my work, but it actually did. Whenever I felt stuck on a problem or brainstorming ideas, I’d start drawing random shapes, arrows, or little cartoons. Weirdly enough, it cleared my mind and sparked connections I wouldn’t have noticed otherwise. Now, I carry a small notebook everywhere just for this. Creativity isn’t always about sitting at your desk and forcing ideas — sometimes it’s about letting your brain wander in small, playful ways. Anyone else have a strange habit that actually works?",
     }
 ];
 
