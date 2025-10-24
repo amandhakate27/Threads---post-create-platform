@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'ThreadsUI';
+    src: url('/font/9-OLZpsiSlo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: black;
+    font-family: 'ThreadsUI', system-ui;
+    color: white;
+
+}
+
+.logo img{
+    width: 50px;
+    margin:0 0 0 2rem;
+    position: relative;
+    top: 35px;
+    
+}
+.container{
+    height: 90vh;
+    margin: 0 3rem 0 7rem;
+    display: flex;
+    gap: 1rem;
+   
+}
+
+.threads{
+    height: 85vh;
+    width: 70%;
+    background-color: #181818;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #333;
+    padding: 1rem;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+.threads::-webkit-scrollbar {
+  width: 6px;
+}
+
+.threads::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+.threads::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+.content{
+    margin-bottom: 2rem;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.user-profile-photo{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    overflow: hidden;     
+    display: flex;             
+    align-items: center;        
+    justify-content: center;
+}
+.user-profile-photo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+} 
+.user-name{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: space-around;
+}
+.username span img{
+    height: 15px;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+.content-post{
+    margin-bottom: 2rem;
+
+}
+
+.action-buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+
+
+
+.icon-link {
+  background: #1f1f1f;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.icon-link:hover {
+  background: #333;
+  transform: scale(1.05);
+  
+}
+
+.icon-link img {
+  width: 20px;
+  height: 20px;
+}
+
+.delete-post button{
+    border: none;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+}
+
+hr {
+  border: none;
+  height: 0.8px;
+  background-color: #444;
+  border-radius: 2px;
+}
+
+
+.new{
+   
+    height: 61vh;
+    width: 30%;
+    background-color: #1E1E1E;
+    border-radius:25px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #444;
+}
+.landingImg{
+  background-image: url('/assets/landing-3x.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+ .thread-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.new-thread{
+    padding: 1.2rem 1.5rem;
+    margin: 0 2rem 0;
+    border-radius: 25px;
+    background-color: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.new-thread:hover{
+      background: linear-gradient(115deg, #ffdb4d, #ff3f8a, #7b3bf2);
+}
+
+.th-logo img{
+    width: 25px;
+}
+
+.n-thread p{
+    font-weight: bold;
+}

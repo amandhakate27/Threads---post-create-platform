@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Edit Thread | <%=thread.name%>
+    </title>
+    <link rel="icon" href="/assets/threads-app-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/CSS/edit.css">
+</head>
+
+<body>
+    <main>
+        <span class="logo">
+            <img src="/assets/threads.png" alt="thread-icon">
+        </span>
+
+        <div class="container">
+            <div class="post-id">
+                <p> <span title="Thread ID">
+                        Id: <%=thread.id %>
+                    </span></p>
+            </div>
+            <div class="info">
+                <div class="profile-photo" title="user profile photo">
+                    <img src="<%= thread.imgSrc %>" alt="profile-photo">
+                </div>
+                <div class="user-info">
+                    <div class="name">
+                        <h2 title="Name">
+                            <%= thread.name %>
+                        </h2>
+                    </div>
+                    <div class="username" title="Username">
+                        <p>@<%=thread.username %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <form method="post" action="/threads/<%= thread.id %>?_method=PATCH">
+
+                <div class="post-content">
+                    <textarea name="content" maxlength="700" cols="50" rows="6">
+                <%= thread.content %>
+              </textarea>
+                </div>
+
+                <button class="post">POST</button>
+
+            </form>
+        </div>
+
+        <div class="threads-img">
+            <img src="/assets/threads_rotated_180.png" alt="photo">
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threads</title>
+    <link rel="icon" href="/assets/threads-app-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/CSS/index.css">
+</head>
+
+<body>
+    <main>
+        <span class="logo">
+            <img src="/assets/threads.png" alt="thread-icon">
+        </span>
+        <div class="container">
+
+            <div class="threads">
+                <% for(thread of threads) { %>
+                    <div class="content">
+                        <div class="user-info">
+                            <div class="user-profile-photo">
+                                <img src="<%= thread.imgSrc %>" alt="profile">
+                            </div>
+                            <div class="user-name">
+                                <div class="full-name">
+                                    <h4>
+                                        <%= thread.name %>
+                                    </h4>
+                                </div>
+                                <div class="username">
+                                    <span>
+                                        @<%=thread.username%><img src="/assets/threads-bluetick.svg" alt="blue-tick">
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content-post">
+                            <p>
+                                <%= thread.content %>
+                            </p>
+                        </div>
+
+
+                        <div class="action-buttons">
+                            <div>
+                                <a href="http://localhost:3000/threads/<%=thread.id %>" class="icon-link"
+                                    target="_blank">
+                                    <img src="/assets/viewPost.svg" alt="view-post" title="View Post">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="http://localhost:3000/threads/<%=thread.id %>/edit" class="icon-link"
+                                    target="_blank">
+                                    <img src="/assets/editPost.svg" alt="edit-post" title="Edit Post">
+                                </a>
+                            </div>
+
+                            <div class="delete-post">
+                                <form method="post" action="/threads/<%= thread.id %>?_method=DELETE">
+                                    <button>
+                                        <a href="" class="icon-link">
+                                            <img src="/assets/deletePost.svg" alt="delete-post" title="Delete Post">
+                                        </a>
+                                    </button>
+
+
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+                    </div>
+                    <% } %>
+
+
+            </div>
+
+            <div class="new">
+                <div class="landingImg"></div>
+
+                <a href="http://localhost:3000/threads/new" class="thread-link" target="_blank">
+                    <div class="new-thread">
+                        <div class="th-logo">
+                            <img src="/assets/threads.png" alt="th-logo">
+                        </div>
+                        <div class="n-thread">
+                            <p>Create New Thread</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+
+    </main>
+</body>
+
+</html>

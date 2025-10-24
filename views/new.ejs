@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Thread</title>
+    <link rel="icon" href="/assets/threads-app-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/CSS/new.css">
+</head>
+
+<body>
+    <main>
+        <span class="logo">
+            <img src="/assets/threads.png" alt="thread-icon">
+        </span>
+
+        <div class="container">
+            <form method="post" action="/threads" enctype="multipart/form-data">
+                <div class="user-info">
+
+                    <div class="user-profile-photo">
+
+                        <img src="/assets/man-user-circle-icon.svg" alt="user-profile-photo"
+                            title="Upload Profile Photo" id="profile-photo">
+
+                        <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file"
+                            name="profileImage">
+
+                    </div>
+                    <div class="label">
+                        <label for="input-file" title="Upload Image">Upload Image</label>
+                    </div>
+
+                    <div class="full-name">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="username">
+                        <input type="text" name="username" placeholder="Username" required>
+                    </div>
+
+                    <div class="content">
+                        <textarea id="post-thread" placeholder="What's new?" maxlength="700" cols="50" rows="5"
+                            name="content" required></textarea>
+                    </div>
+                    <button class="post">POST</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="threads-img">
+            <img src="/assets/threads_rotated_180.png" alt="photo">
+        </div>
+
+    </main>
+    <script src="/js/new.js"></script>
+</body>
+
+</html>

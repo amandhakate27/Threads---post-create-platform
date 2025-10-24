@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'ThreadsUI';
+    src: url('/font/9-OLZpsiSlo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    font-family: 'ThreadsUI', system-ui;
+    color: white;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  
+}
+
+.logo img{
+    width: 50px;
+    margin:2rem 0 0 2rem;
+    z-index: 2;
+    position: relative;
+}
+.container{
+    height: 80vh;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #181818;
+    border-radius: 25px;
+    border: 1px solid #333;
+    z-index: 2;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.status-code {
+    font-size: 8rem;
+    font-weight: bold;
+    background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pnf {
+    font-size: 2rem;
+    color: #ccc; 
+    letter-spacing: 0.5px;
+}
+
+
+
+.threads-img {
+  position: absolute;
+  bottom: 0;      
+  left: 1rem;
+  width: 100%;
+  z-index: 0;       
+  opacity: 0.5;   
+transition: opacity 0.4s ease-in-out; 
+}
+.threads-img:hover{
+    opacity: 1;
+}
+
+.threads-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
