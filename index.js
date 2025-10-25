@@ -85,7 +85,9 @@ let threads = [
        content : "I never thought doodling in the margins of my notebook would help my work, but it actually did. Whenever I felt stuck on a problem or brainstorming ideas, I’d start drawing random shapes, arrows, or little cartoons. Weirdly enough, it cleared my mind and sparked connections I wouldn’t have noticed otherwise. Now, I carry a small notebook everywhere just for this. Creativity isn’t always about sitting at your desk and forcing ideas — sometimes it’s about letting your brain wander in small, playful ways. Anyone else have a strange habit that actually works?",
     }
 ];
-
+app.get("/", (req,res)=>{
+    res.redirect("/threads");
+});
 // to see all threads
 app.get("/threads", (req,res)=>{
     res.render("index.ejs", {threads});
