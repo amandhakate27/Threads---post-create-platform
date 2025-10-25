@@ -99,6 +99,6 @@ thread-app/
 
 ## Live Demo
 
-🔗 **Check it out here:** [Thread App on Render](https://your-app-name.onrender.com)
+🔗 **Check it out here:** [Thread App on Render](https://threads-post-create-platform.onrender.com)
 
 **Developed by :** @amandhakate27
