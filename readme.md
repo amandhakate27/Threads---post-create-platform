@@ -102,3 +102,4 @@ thread-app/
 🔗 **Check it out here:** [Thread App on Render](https://threads-post-create-platform.onrender.com)
 
 **Developed by :** @amandhakate27
+## Note -  Project doesn't focus on responsiveness .
